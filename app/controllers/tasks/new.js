@@ -6,6 +6,26 @@ export default Controller.extend({
       var title = this.get('title');
       var description = this.get('description');
       var date = this.get('date');
+
+      // create new task
+      var newTask = this.store.createRecord('task', {
+        title: title,
+        description: description,
+        date: new Date(date)
+      });
+
+      // save to firebase
+      newTask.save();
+
+      // clear form fields
+      this.setProperties({
+        title: '',
+        description: '',
+        date: ''
+      });
+
+
+
     }
   }
 });
