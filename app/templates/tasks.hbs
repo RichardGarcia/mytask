@@ -8,5 +8,9 @@
 {{/each}} --}}
 
 {{#each model as | task |}}
-  <h4>{{task.title}}</h4>
+  <div class="well">
+    <h4>Task title: {{task.title}}</h4>
+    <small>Due: {{format-date task.date}}</small>
+    <p>Task description: {{task.description}}</p>
+  </div>
 {{/each}}
