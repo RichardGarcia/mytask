@@ -13,5 +13,7 @@
     <small>Due: {{format-date task.date}}</small>
     <p>Task description: {{task.description}}</p>
     <p>{{#link-to 'tasks.edit' task.id}}edit{{/link-to}}</p>
+    {{!-- <button class="btn btn-warning" {{action 'editTask' task.id}}>edit</button> --}}
+    <button class="btn btn-danger" {{action 'deleteTask' task.id}}>delete</button>
   </div>
 {{/each}}
