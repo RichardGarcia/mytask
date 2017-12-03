@@ -12,8 +12,7 @@
     <h4>Task title: {{task.title}}</h4>
     <small>Due: {{format-date task.date}}</small>
     <p>Task description: {{task.description}}</p>
-    <p>{{#link-to 'tasks.edit' task.id}}edit{{/link-to}}</p>
-    {{!-- <button class="btn btn-warning" {{action 'editTask' task.id}}>edit</button> --}}
+    {{#link-to 'tasks.edit' task.id class='btn btn-success'}}edit{{/link-to}}
     <button class="btn btn-danger" {{action 'deleteTask' task.id}}>delete</button>
   </div>
 {{/each}}

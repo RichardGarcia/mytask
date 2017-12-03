@@ -1,0 +1,35 @@
+[debug] [2017-12-03T10:30:44.967Z] ----------------------------------------------------------------------
+[debug] [2017-12-03T10:30:44.970Z] Command:       /Users/rvg/.nvm/versions/node/v7.10.0/bin/node /Users/rvg/.nvm/versions/node/v7.10.0/bin/firebase serve
+[debug] [2017-12-03T10:30:44.971Z] CLI Version:   3.15.4
+[debug] [2017-12-03T10:30:44.971Z] Platform:      darwin
+[debug] [2017-12-03T10:30:44.971Z] Node Version:  v7.10.0
+[debug] [2017-12-03T10:30:44.972Z] Time:          Sun Dec 03 2017 23:30:44 GMT+1300 (NZDT)
+[debug] [2017-12-03T10:30:44.972Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-03T10:30:44.987Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-03T10:30:44.987Z] > authorizing via signed-in user
+[debug] [2017-12-03T10:30:44.990Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mytask-1990e  
+ Sun Dec 03 2017 23:30:44 GMT+1300 (NZDT)
+[debug] [2017-12-03T10:30:46.575Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T10:30:46.577Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mytask-1990e/tokens  
+ Sun Dec 03 2017 23:30:46 GMT+1300 (NZDT)
+[debug] [2017-12-03T10:30:47.574Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/rvg/_aral/Ember/mytask'...
+[info] 
+[debug] [2017-12-03T10:30:47.579Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/mytask-1990e  
+ Sun Dec 03 2017 23:30:47 GMT+1300 (NZDT)
+[debug] [2017-12-03T10:30:48.974Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T10:30:48.975Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/212987269917/clients/_:getWebAppConfig  
+ Sun Dec 03 2017 23:30:48 GMT+1300 (NZDT)
+[debug] [2017-12-03T10:30:50.312Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T10:30:50.334Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/Users/rvg/.nvm/versions/node/v7.10.0/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:17)
+    at Object.onceWrapper (events.js:293:19)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:188:7)
+    at emitListeningNT (net.js:1286:10)
+    at _combinedTickCallback (internal/process/next_tick.js:77:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+[error] 
+[error] Error: An unexpected error has occurred.
